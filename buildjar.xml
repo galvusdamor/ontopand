@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project panda2-ontopand">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/home/gregor/Workspace/Panda2/cluster-1-and-6/planning-model/ontopand_v1.0.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/home/gregor/Workspace/Panda2/panda2-ontopand/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/home/gregor/Workspace/Panda2/panda2-ontopand/lib/owlapi-bin.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/home/gregor/Workspace/Panda2/panda2-ontopand/lib/jfact-1.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/home/gregor/Workspace/Panda2/panda2-ontopand/lib/HermiT.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/home/gregor/Workspace/Panda2/panda2-ontopand/lib/FaCTpp-OWLAPI-3.4-v1.6.2.jar"/>
+        </jar>
+    </target>
+</project>
